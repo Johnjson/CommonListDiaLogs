@@ -5,7 +5,5 @@
         <item>@string/app_select2</item>
         <item>@string/app_select3</item>
         <item>@string/app_select4</item>
-        <item>@string/app_select5</item>
-        <item>@string/app_select6</item>
     </string-array>
 </resources>

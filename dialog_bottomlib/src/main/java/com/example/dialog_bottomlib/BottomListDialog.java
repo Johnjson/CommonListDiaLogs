@@ -35,12 +35,23 @@ public class BottomListDialog extends Dialog implements View.OnClickListener {
         private int color = Color.parseColor("#4a4a4a");
         private int textsize = 0;
 
+        /**
+         * @param content 显示内容
+         * @param clickListener   监听回调
+         * @param color   字体颜色
+         * */
         public BottomListMenuItem(String content, OnClickPositionListener clickListener, int color) {
             this.content = content;
             this.clickListener = clickListener;
             this.color = color;
         }
 
+        /**
+         * @param content 显示内容
+         * @param clickListener   监听回调
+         * @param color   字体颜色
+         * @param textsize  字体大小
+         * */
         public BottomListMenuItem(String content, OnClickPositionListener clickListener, int color, int textsize) {
             this.content = content;
             this.clickListener = clickListener;
@@ -48,28 +59,38 @@ public class BottomListDialog extends Dialog implements View.OnClickListener {
             this.textsize = textsize;
         }
 
+        /**
+         * @param content 显示内容
+         * @param color   字体颜色
+         * @param textsize  字体大小
+         * */
         public BottomListMenuItem(String content, int color, int textsize) {
             this.content = content;
             this.color = color;
             this.textsize = textsize;
         }
 
+
+        /**
+         * @param content 显示内容
+         * @param clickListener   监听回调
+         * */
         public BottomListMenuItem(String content, OnClickPositionListener clickListener) {
             this.content = content;
             this.clickListener = clickListener;
         }
 
 
-        public BottomListMenuItem(String name) {
-            this.content = name;
+        public BottomListMenuItem(String content) {
+            this.content = content;
         }
 
-        public String getName() {
+        public String getContent() {
             return content;
         }
 
-        public void setName(String name) {
-            this.content = name;
+        public void setContent(String content) {
+            this.content = content;
         }
 
         public OnClickPositionListener getClickListener() {
@@ -122,7 +143,7 @@ public class BottomListDialog extends Dialog implements View.OnClickListener {
                 }
 
                 TextView mTvContent = (TextView) v.findViewById(R.id.menu_button);
-                mTvContent.setText(btnMenu.get(i).getName());
+                mTvContent.setText(btnMenu.get(i).getContent());
                 mTvContent.setTextColor(btnMenu.get(i).color);
                 mTvContent.setPadding(20, 0, 20, 0);
                 mTvContent.setGravity(Gravity.CENTER);
