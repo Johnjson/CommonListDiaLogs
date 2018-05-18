@@ -12,7 +12,6 @@ import com.example.dialog_bottomlib.interfaces.OnClickPositionListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private BottomListDialog mBottomListDialog;
     /**
      * 底部弹出
      */
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void showBottomListDialog() {
         String[] mReportList = MainActivity.this.getResources().getStringArray(R.array.selectList);
-        mBottomListDialog = new BottomListDialog.Builder(MainActivity.this).
+        new BottomListDialog.Builder(MainActivity.this).
                 addMenuItem(new BottomListDialog.BottomListMenuItem("张三的锅")).
                 addMenuListItem(mReportList, new OnClickPositionListener() {
                     @Override
