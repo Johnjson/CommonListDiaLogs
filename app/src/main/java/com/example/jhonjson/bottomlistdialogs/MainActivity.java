@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.example.dialog_bottomlib.BottomListDialog;
 import com.example.dialog_bottomlib.interfaces.OnClickPositionListener;
 
+
 public class MainActivity extends AppCompatActivity {
 
     BottomListDialog mBottomListDialog;
