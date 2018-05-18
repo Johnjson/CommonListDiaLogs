@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectList">
+        <item>@string/app_select1</item>
+        <item>@string/app_select2</item>
+        <item>@string/app_select3</item>
+        <item>@string/app_select4</item>
+        <item>@string/app_select5</item>
+        <item>@string/app_select6</item>
+    </string-array>
+</resources>

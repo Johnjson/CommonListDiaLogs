@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BottomListDiaLogs</string>
+
+
+    <string name="app_select1">张三1</string>
+    <string name="app_select2">张三2</string>
+    <string name="app_select3">张三3</string>
+    <string name="app_select4">张三4</string>
+    <string name="app_select5">张三5</string>
+    <string name="app_select6">张三6</string>
+</resources>
