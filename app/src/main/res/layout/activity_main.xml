@@ -7,11 +7,24 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/mbottom"
-        android:layout_width="60dp"
+        android:id="@+id/mbottom1"
+        android:layout_width="80dp"
         android:layout_height="45dp"
         android:layout_marginTop="@dimen/com_padding_55"
-        android:text="底部弹出"
+        android:text="底部弹出dialog1"
+        android:gravity="center"
+        android:background="#F2F2F2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/mbottom2"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mbottom1"
+        android:layout_marginTop="@dimen/com_padding_55"
+        android:text="底部弹出dialog2"
+        android:padding="5dp"
         android:gravity="center"
         android:background="#F2F2F2"
         android:layout_centerHorizontal="true"
