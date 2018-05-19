@@ -1,3 +1,4 @@
+![效果图1](https://img.shields.io/badge/build-passing-%23209e89.svg)
 # CommonListDiaLogs
 封装通用dialog  弹出框
 
