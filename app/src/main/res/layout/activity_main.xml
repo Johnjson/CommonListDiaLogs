@@ -22,8 +22,35 @@
         android:layout_width="80dp"
         android:layout_height="45dp"
         android:layout_below="@+id/mbottom1"
-        android:layout_marginTop="@dimen/com_padding_55"
+        android:layout_marginTop="@dimen/com_padding_10"
         android:text="底部弹出dialog2"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#F2F2F2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/middle1"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mbottom2"
+        android:layout_marginTop="@dimen/com_padding_10"
+        android:text="中部弹出dialog1"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#F2F2F2"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/middle2"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/middle1"
+        android:layout_marginTop="@dimen/com_padding_10"
+        android:text="中部弹出dialog2"
         android:padding="5dp"
         android:gravity="center"
         android:background="#F2F2F2"

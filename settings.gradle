@@ -1,1 +1,1 @@
-include ':app', ':dialog_bottomlib'
+include ':app', ':dialoglib'
