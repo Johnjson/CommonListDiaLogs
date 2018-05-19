@@ -18,7 +18,7 @@ Add the dependency to your build.gradle.
 
 ```java
 dependencies {
-    implementation 'com.github.Johnjson:BottomListDiaLogs:v1.0.1'
+    implementation 'com.github.Johnjson:CommonListDiaLogs:v1.0.1'
 }
 ```
 
