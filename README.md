@@ -32,7 +32,8 @@ dependencies {
 
 **v1.0.2：**
 
-``` /**
+``` 
+        /**
          * 选择弹出框
          */
         CommonSelectDialog mCommonSelectDialog = null;
@@ -164,6 +165,14 @@ dependencies {
             /**中部弹出2*/
             case R.id.middle2:
                 showMiddleListDialog2(MainActivity.this, R.dimen.com_font_size_16, getResources().getColor(R.color.colorAccent));
+                break;
+            /**选择弹出框*/
+            case R.id.select:
+               showSelectDialog(MainActivity.this, "提示", "你确定要关闭这个dialog吗？", "取消", "确认", 16);
+                break;
+            /**单个按钮弹出框*/
+            case R.id.selec1:
+               showSelectOneDialog(MainActivity.this, "提示", "你确定要删除这个dialog吗？", "确认", 16);
                 break;
             default:
                 break;
