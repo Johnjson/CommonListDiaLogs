@@ -57,4 +57,32 @@
         android:layout_centerHorizontal="true"
         />
 
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/middle2"
+        android:layout_marginTop="@dimen/com_padding_10"
+        android:text="选择弹出dialog"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#F2F2F2"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/selec1"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/select"
+        android:layout_marginTop="@dimen/com_padding_10"
+        android:text="单个按钮弹出dialog"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#F2F2F2"
+        android:layout_centerHorizontal="true"
+        />
+
 </RelativeLayout>

@@ -3,6 +3,8 @@
 
     <string name="app_name">dialog_bottomlib</string>
     <string name="app_cancel">取消</string>
+    <string name="app_prompt">提示</string>
+    <string name="app_confirm">确定</string>
 
 
 </resources>
