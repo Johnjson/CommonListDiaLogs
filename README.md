@@ -13,18 +13,72 @@
 
 ![效果图4](img/7D66D69D-FC66-40F1-B622-FBA8F2D219CD.png)
 
+![效果图5](img/87BD7DCA-178C-41DB-8F16-C338554257C9.png)
+
+![效果图6](img/5D323BF0-D71D-4E9A-8E10-6DA790E47DC3.png)
+
 ### 使用方式：
 
 Add the dependency to your build.gradle.
 
 ```java
 dependencies {
-    implementation 'com.github.Johnjson:CommonListDiaLogs:v1.0.1'
-}
+	        implementation 'com.github.Johnjson:CommonListDiaLogs:v1.0.2'
+	}
 ```
 
 
 ### 更新日志
+
+**v1.0.2：**
+
+``` /**
+         * 选择弹出框
+         */
+        CommonSelectDialog mCommonSelectDialog = null;
+    
+        public void showSelectDialog(final Context context, String mTitle, String mContent, String cancel, String confirm, int size) {
+            mCommonSelectDialog = new CommonSelectDialog.Builder(context).
+                    setContentGravity(Gravity.CENTER).
+                    setTouchAble(true).
+                    setTitle(mTitle).
+                    setContent(mContent).
+                    setContentSize(size).
+                    setLeftButtonInterface(cancel, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            mCommonSelectDialog.dismiss();
+                        }
+                    }).setRightButtonInterface(confirm, new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mCommonSelectDialog.dismiss();
+                }
+            }).show();
+    
+        }
+    
+    
+        /**
+         * 单个按钮弹出框
+         */
+        public void showSelectOneDialog(final Context context, String mTitle, String mContent, String confirm, int size) {
+            mCommonSelectDialog = new CommonSelectDialog.Builder(context).
+                    setContentGravity(Gravity.CENTER).
+                    setTouchAble(true).
+                    setTitle(mTitle).
+                    setContent(mContent).
+                    setContentSize(size).
+                    setOneButtonInterface(confirm, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            mCommonSelectDialog.dismiss();
+                        }
+                    }).show();
+    
+        }
+```
+
 
 **v1.0.1：**
 
@@ -116,5 +170,8 @@ dependencies {
         }
 
     }```
+
+
+
 
 如果你喜欢，欢迎stars
