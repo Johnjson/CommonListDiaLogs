@@ -26,13 +26,13 @@ Add the dependency to your build.gradle.
 
 ```java
 dependencies {
-	        implementation 'com.github.Johnjson:CommonListDiaLogs:v1.0.3'
+	        implementation 'com.github.Johnjson:CommonListDiaLogs:v1.0.4'
 	}
 ```
 
 
 ### 更新日志
-**v1.0.3：**
+**v1.0.4：**
 ``` 
          /**
              * showLoading弹出框
