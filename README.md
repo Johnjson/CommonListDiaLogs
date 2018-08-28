@@ -32,6 +32,21 @@ dependencies {
 
 
 ### 更新日志
+**v1.0.3：**
+``` 
+         /**
+             * showLoading弹出框
+             */
+            public void showLoadingDialog(final Context context) {
+        //        if (null == mLoadingDialog) {
+                    mLoadingDialog = new LoadingDialog(context);
+                    mLoadingDialog.setTouchCanceled(true);
+                    mLoadingDialog.show();
+        //        }
+        
+            }
+```
+
 
 **v1.0.2：**
 

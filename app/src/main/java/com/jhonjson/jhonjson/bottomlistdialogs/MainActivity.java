@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LoadingDialog mLoadingDialog;
 
     /**
-     * 单个按钮弹出框
+     * showLoading弹出框
      */
     public void showLoadingDialog(final Context context) {
 //        if (null == mLoadingDialog) {
