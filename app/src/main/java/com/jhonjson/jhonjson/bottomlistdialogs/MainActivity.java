@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.jhonjson.dialoglib.BottomListDialog;
 import com.jhonjson.dialoglib.CommonSelectDialog;
+import com.jhonjson.dialoglib.LoadingDialog;
 import com.jhonjson.dialoglib.MiddleListDialog;
 import com.jhonjson.dialoglib.interfaces.OnClickPositionListener;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.middle2).setOnClickListener(this);
         findViewById(R.id.select).setOnClickListener(this);
         findViewById(R.id.selec1).setOnClickListener(this);
+        findViewById(R.id.loading).setOnClickListener(this);
     }
 
 
@@ -65,6 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             /**单个按钮弹出框*/
             case R.id.selec1:
                 showSelectOneDialog(MainActivity.this, "提示", "你确定要删除这个dialog吗？", "确认", 16);
+                break;
+
+            /**loading*/
+            case R.id.loading:
+                showLoadingDialog(MainActivity.this);
                 break;
             default:
                 break;
@@ -182,6 +189,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         mCommonSelectDialog.dismiss();
                     }
                 }).show();
+
+    }
+
+    LoadingDialog mLoadingDialog;
+
+    /**
+     * 单个按钮弹出框
+     */
+    public void showLoadingDialog(final Context context) {
+//        if (null == mLoadingDialog) {
+            mLoadingDialog = new LoadingDialog(context);
+            mLoadingDialog.setTouchCanceled(true);
+            mLoadingDialog.show();
+//        }
 
     }
 

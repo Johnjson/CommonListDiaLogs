@@ -85,4 +85,17 @@
         android:layout_centerHorizontal="true"
         />
 
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/selec1"
+        android:layout_marginTop="@dimen/com_padding_10"
+        android:text="loading"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="#F2F2F2"
+        android:layout_centerHorizontal="true"
+        />
+
 </RelativeLayout>
