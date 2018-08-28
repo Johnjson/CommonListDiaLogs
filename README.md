@@ -26,7 +26,7 @@ Add the dependency to your build.gradle.
 
 ```java
 dependencies {
-	        implementation 'com.github.Johnjson:CommonListDiaLogs:v1.0.2'
+	        implementation 'com.github.Johnjson:CommonListDiaLogs:v1.0.3'
 	}
 ```
 
