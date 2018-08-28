@@ -5,6 +5,8 @@
 由于每次写dialog都要写很多重复代码，因此简单的封装了一个CommonListDiaLogs,封装了一些常用方法，使用Builder模式实现:
 
 ### 展示效果：
+![效果图1](img/device-2018-08-28-153041.mp4)
+
 ![效果图1](img/9FD09CD2-8D55-4528-9870-9547880BBDC6.png)
 
 ![效果图2](img/50C6C998-A2DE-4E18-B524-3D5D15F88EF9.png)
